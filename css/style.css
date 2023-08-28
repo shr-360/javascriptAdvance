@@ -1,0 +1,141 @@
+/* common css start */
+
+:root{
+    --fontColor: black;
+    --bgColor1: white;
+    --borderColorHover: 1px solid royalblue;
+    --borderColor: 1px solid black;
+    --bodyBgColor: rgb(232, 231, 231);
+    --bgColor2: rgb(76, 255, 48);
+    --bgColor3: royalblue;
+}
+
+
+:root.dark{
+    --fontColor: white;
+    --bodyBgColor:  rgb(43, 40, 40);
+    --borderColorHover: 1px solid royalblue;
+    --bgColor1: black;
+    --borderColor: 1px solid white;
+    --bgColor2: rgb(76, 255, 48);
+    --bgColor3: royalblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    margin: 0;
+}
+body{
+    background-color: var(--bodyBgColor);
+}
+#btn{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: var(--fontColor);
+    position: fixed;
+    top: calc(50% - 15px);
+    right: 50px;
+}
+/* common css  end */
+
+.logInBar{
+    width: 50%;
+    height: 380px;
+    margin: 5px auto;
+    background-color: var(--bgColor1);
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .6s;
+}
+.logo img{
+    width: 200px;
+    margin-left: 670px;
+    margin-top: 60px;
+}
+.logInBar .innercontainer{
+    width: 90%;
+    margin: 5px auto;
+
+}
+.innercontainer #userep{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-top: 30px;
+    border: var(--borderColor);
+    background-color: var(--bgColor1);
+    transition: .4s;
+}
+#userep:hover{
+    border: var(--borderColorHover);
+}
+.innercontainer #password{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-top: 20px;
+    border: var(--borderColor);
+    background-color: var(--bgColor1);
+    transition: .4s;
+}
+#password:hover{
+    border: var(--borderColorHover);
+}
+#login{
+    background-color: var(--bgColor3);
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+#forgot{
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: royalblue;
+    
+    
+}
+#createAccount{
+    background-color: yellowgreen;
+    padding: 8px 15px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+    margin: 20px 220px;
+    border-radius: 5px;
+    
+}
